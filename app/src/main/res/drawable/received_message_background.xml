@@ -1,0 +1,6 @@
+<!-- received_message_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#03A9F4"/> <!-- Light grey background for received messages -->
+    <corners android:radius="10dp"/>
+    <padding android:left="10dp" android:right="10dp" android:top="5dp" android:bottom="5dp"/>
+</shape>

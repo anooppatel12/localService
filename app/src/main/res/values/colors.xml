@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="whatsapp_green">#25D366</color>
+    <color name="call_blue">#2196F3</color>
+    <color name="gray">#808080</color>
+    <color name="primary">#3F51B5</color>
+    <color name="secondary">#4CAF50</color>
+    <color name="accent">#FF9800</color>
+    <color name="background_color">#F5F5F5</color>
+    <color name="primary_color">#3F51B5</color>
+    <color name="link_color">#03A9F4</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="provider_color">#4CAF50</color>
+    <color name="taker_color">#2196F3</color>
+
+
+
+</resources>

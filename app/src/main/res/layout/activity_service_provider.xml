@@ -1,0 +1,121 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Header Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Service"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Service Name Input -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp">
+
+            <EditText
+                android:id="@+id/service_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Service Name"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:background="@android:color/transparent" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Description Input -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp">
+
+            <EditText
+                android:id="@+id/service_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:background="@android:color/transparent" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Contact Details Input -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp">
+
+            <EditText
+                android:id="@+id/contact_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact Details"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:background="@android:color/transparent" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Image Preview -->
+        <ImageView
+            android:id="@+id/selected_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/default_image"
+            android:contentDescription="Selected Image Preview" />
+
+        <!-- Select Image Button -->
+        <Button
+            android:id="@+id/upload_image_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary"
+            android:text="Select Image"
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp" />
+
+        <!-- Submit Service Button -->
+        <Button
+            android:id="@+id/submit_service_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/secondary"
+            android:text="Submit Service"
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp" />
+
+        <!-- View Services Button -->
+        <Button
+            android:id="@+id/view_services_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/accent"
+            android:text="View My Services"
+            android:textColor="@color/white"
+            android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>

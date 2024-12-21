@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- ScrollView to contain your content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/leave_review_button">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Service Image -->
+            <ImageView
+                android:id="@+id/service_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_image"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Service Name -->
+            <TextView
+                android:id="@+id/service_name_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"
+                android:text="Service Name" />
+
+            <!-- Average Rating -->
+            <TextView
+                android:id="@+id/average_rating_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/primary_color"
+                android:layout_marginBottom="12dp"
+                android:text="Rating: 4.5/5" />
+
+            <!-- Service Description -->
+            <TextView
+                android:id="@+id/service_description_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/gray"
+                android:layout_marginBottom="16dp"
+                android:text="Service description goes here." />
+
+            <!-- Contact Details -->
+            <TextView
+                android:id="@+id/contact_details_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="24dp"
+                android:text="Contact details go here." />
+
+            <!-- Action Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <!-- WhatsApp Button -->
+                <Button
+                    android:id="@+id/whatsapp_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/whatsapp_green"
+                    android:drawableStart="@drawable/ic_whatsapp"
+                    android:drawablePadding="8dp"
+                    android:padding="12dp"
+                    android:text="WhatsApp"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textSize="16sp" />
+
+                <!-- Spacer -->
+                <View
+                    android:layout_width="16dp"
+                    android:layout_height="wrap_content" />
+
+                <!-- Call Button -->
+                <Button
+                    android:id="@+id/call_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/call_blue"
+                    android:drawableStart="@drawable/ic_call"
+                    android:drawablePadding="8dp"
+                    android:padding="12dp"
+                    android:text="Call"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Reviews Section -->
+            <TextView
+                android:id="@+id/reviews_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reviews"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reviews_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Leave a Review Button (Floating) -->
+    <Button
+        android:id="@+id/leave_review_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primary_color"
+        android:text="Leave a Review"
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

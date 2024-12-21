@@ -1,0 +1,6 @@
+<!-- sent_message_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#E91E63"/> <!-- White background for sent messages -->
+    <corners android:radius="10dp"/>
+    <padding android:left="10dp" android:right="10dp" android:top="5dp" android:bottom="5dp"/>
+</shape>
